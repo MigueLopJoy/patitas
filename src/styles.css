@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Truculenta';
+    src: url(./assets/fonts/Truculenta/Truculenta-VariableFont_opsz\,wdth\,wght.ttf) format('truetype');
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+    font-family: 'Truculenta';
+}
+

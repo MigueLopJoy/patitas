@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-md mb-3">
+        <div class="container-fluid">
+    
+            <button class="navbar-toggler" type="button" (click)="toggleMenu(!isMenuCollapsed)">
+                <span>&#9776;</span>
+            </button>
+    
+            <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+
+                <ul ngbNav #nav="ngbNav" class="navbar-nav" [(activeId)]="activeLink" >
+
+                    <li [ngbNavItem]="1">
+                        <button ngbNavLink [routerLink]="'/inicio'" (click)="toggleMenu(!isMenuCollapsed)">Inicio</button>
+                    </li>
+
+                    <li ngbDropdown class="nav-item" role="presentation" [ngbNavItem]="2">
+                        <button type="button" class="nav-link" ngbDropdownToggle>Acogidas y Adopciones</button>
+                        <div ngbDropdownMenu>
+                            <button ngbDropdownItem [routerLink]="'/mascotas/acogidas'" (click)="toggleMenu(!isMenuCollapsed)">Acogidas</button>
+                            <button ngbDropdownItem [routerLink]="'/mascotas/adopciones'" (click)="toggleMenu(!isMenuCollapsed)">Adopciones</button>
+                            <button ngbDropdownItem [routerLink]="'/mascotas/urgencias'" (click)="toggleMenu(!isMenuCollapsed)">Casos Urgentese</button>
+                            <div class="dropdown-divider"></div>
+                            <button ngbDropdownItem [routerLink]="'/mascotas/finales-felices'" (click)="toggleMenu(!isMenuCollapsed)">Finales Felices</button>
+                        </div>
+                    </li>
+
+                    <li ngbDropdown class="nav-item" role="presentation" [ngbNavItem]="2">
+                        <button type="button" class="nav-link" ngbDropdownToggle>Colabora</button>
+                        <div ngbDropdownMenu>
+                            <button ngbDropdownItem [routerLink]="'/mascotas/acogidas'" (click)="toggleMenu(!isMenuCollapsed)">Donaciones</button>
+                            <button ngbDropdownItem [routerLink]="'/mascotas/adopciones'" (click)="toggleMenu(!isMenuCollapsed)">Programa Apadrina</button>
+                        </div>
+                    </li>
+
+                    <li [ngbNavItem]="3">
+                        <button ngbNavLink [routerLink]="'/mascotas/acogidas'" (click)="toggleMenu(!isMenuCollapsed)">Contacto</button>
+                    </li>
+
+                    <li [ngbNavItem]="4">
+                        <button ngbNavLink [routerLink]="'/conocenos'" (click)="toggleMenu(!isMenuCollapsed)">About</button>
+                    </li>
+
+                    <li [ngbNavItem]="5" ngbNavItem class="ms-auto">
+                        <button ngbNavLink  [routerLink]="'/colaborar/donaciones'" (click)="toggleMenu(!isMenuCollapsed)">Donaciones</button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
