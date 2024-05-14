@@ -3,10 +3,26 @@
     src: url(./assets/fonts/Truculenta/Truculenta-VariableFont_opsz\,wdth\,wght.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Lato';
+    src: url(./assets/fonts/Lato/Lato-Regular.ttf) format('truetype');
+}
+
 h1,
 h2,
 h3,
 h5,
 h6 {
-    font-family: 'Truculenta';
+    font-family: 'Truculenta', sans-serif;
+}
+
+p,
+span,
+button,
+a {
+    font-family: 'Lato', sans-serif !important;
+}
+
+ul {
+    list-style: none;
 }

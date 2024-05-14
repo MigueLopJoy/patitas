@@ -1,14 +1,26 @@
-.contact-social {
-    padding: .5rem .75rem;
-}
-
 .contact-social svg {
     width: .75rem;
     height: .75rem;
-    color: #582d45;
+}
+
+.social svg {
+    height: 1rem;
 }
 
 .contact span {
     font-size: .75rem;
     font-weight: 600;
+    color: #fff;
 }
+
+@media screen and (min-width: 768px) {
+    .contact li {
+        border-right: 1px solid #fff;    
+        z-index: 2;
+    }
+    
+    .contact li:last-child {
+        border-right: none;
+    }
+}
+

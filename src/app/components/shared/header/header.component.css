@@ -1,5 +1,31 @@
+.page-header > div {
+    max-width: 1300px;
+}
+
+
+.row:nth-child(2) {
+    border-radius: 10px;
+}
+
+.row:nth-child(2) > div {
+    padding: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .row:nth-child(2) > div {
+        padding: 18px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .row:nth-child(2) > div {
+        padding: 20px 25px;
+    }
+}
+
+
 .navbar-brand img {
-    width: 5rem;
+    width: 4rem;
 }
 
 .donate-btn {
