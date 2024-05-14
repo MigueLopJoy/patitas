@@ -1,4 +1,7 @@
 .page-banner {
     height: 100vh;
-    background-image: url('./../../../../assets/img/resources/banner-lg.png');
+    background-image: url('/assets/img/resources/banner-lg.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }

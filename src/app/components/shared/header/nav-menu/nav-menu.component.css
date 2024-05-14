@@ -1,0 +1,17 @@
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler span {
+    font-size: 1.5rem;
+    color: #582d45;
+}
+
+.nav-item {
+    padding: 0 1.5rem;
+}
+
+.nav-item button {
+    color: #582d45;
+    font-weight: 600;
+}
